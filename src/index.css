@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* IoT Security Sentinel Design System - Cybersecurity Theme
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark cybersecurity theme */
+    --background: 210 30% 8%;
+    --foreground: 145 100% 85%;
+
+    --card: 210 25% 12%;
+    --card-foreground: 145 100% 85%;
+
+    --popover: 210 25% 12%;
+    --popover-foreground: 145 100% 85%;
+
+    /* Security green primary */
+    --primary: 145 85% 45%;
+    --primary-foreground: 210 30% 8%;
+
+    /* Subtle secondary */
+    --secondary: 210 20% 18%;
+    --secondary-foreground: 145 100% 85%;
+
+    --muted: 210 15% 15%;
+    --muted-foreground: 145 30% 65%;
+
+    --accent: 145 85% 45%;
+    --accent-foreground: 210 30% 8%;
+
+    /* Warning/Critical colors */
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --warning: 35 95% 55%;
+    --warning-foreground: 210 30% 8%;
+
+    --border: 210 20% 20%;
+    --input: 210 20% 18%;
+    --ring: 145 85% 45%;
+
+    /* Security-specific colors */
+    --critical: 0 85% 60%;
+    --high: 15 85% 60%;
+    --medium: 35 95% 55%;
+    --low: 145 85% 45%;
+    --secure: 145 100% 40%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(145 85% 45%), hsl(145 100% 35%));
+    --gradient-danger: linear-gradient(135deg, hsl(0 85% 60%), hsl(15 85% 60%));
+    --gradient-warning: linear-gradient(135deg, hsl(35 95% 55%), hsl(45 95% 50%));
+    
+    /* Glows and shadows */
+    --glow-primary: 0 0 20px hsl(145 85% 45% / 0.3);
+    --glow-danger: 0 0 20px hsl(0 85% 60% / 0.3);
+    --shadow-cyber: 0 8px 32px hsl(210 30% 8% / 0.8);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
